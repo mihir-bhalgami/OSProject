@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Operating Sytem Algorithms</title>
+        <h1>OS Algorithms</h1>
+    </head>
+
+    <body>
+        <script src="index.js"></script>
+
+        <div class="dropdown">
+            <button onclick="show()">Select Algorithm</button>
+
+        <div class="dropdown-content" id="dropdown-content">
+
+            <a href="sjf.html">Shortest Job First CPU Scheduling Algorithm</a>
+
+            <a href="">Dining Philosophers Algorithm</a>
+
+            <a href="">C Look Disk Scheduling Algorithm</a>
+
+            <a href="">First In First Out Page Replacement Algorithm</a>
+
+        </div>
+        </div>
+
+        <style>
+            h1{
+                text-align: center;
+                text-decoration: underline;
+                color: blanchedalmond;
+            }
+
+            body{
+                background-color: rgb(35, 35, 143);
+            }
+
+            button{
+                padding: 20px 20px;
+                font-size: 16px;
+            }
+
+            .dropdown{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .dropdown-content{
+                position: absolute;
+                /* display: none; */
+                min-width: 200px;
+                top: 100%;
+                box-shadow: 0px 8px 16px 0px rgba(33, 29, 92, 0.2);
+                z-index: 1;
+            }
+            
+            .dropdown-content a {
+                display: block;
+                position: relative;
+                padding: 20px 20px;
+                width: 100%;
+                background-color: aquamarine;
+                color: black;
+                text-decoration: none;
+            }
+
+            /* button:hover .dropdown-content{display: block;} */
+
+            a:hover{background-color: rgb(11, 110, 26);}
+        
+        </style>
+    </body>
+
+</html>
