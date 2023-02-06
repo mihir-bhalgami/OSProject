@@ -1,16 +1,17 @@
 <html>
-    
     <head><h1>Shortest Job First Algorithm</h1></head>
 
-    <body>
-        <input type="text" id="num_of_processes" placeholder="Enter number of processes"/>
+    <body onload="showProcessNumber()">
+
+        <script src="sjf.js"></script>
+        <p id="processNumber"></p>
         <p></p>
         <input type="text" id="arrival_time" placeholder="Enter Arrival Time"/>
         <p></p>
         <input type="text" id="burst_time" placeholder="Enter Burst Time"/>
         <p></p>
-        <button>Calculate</button>
-        
+        <button onclick="SJF()">Next</button>
+
     </body>
-    
+
 </html>
