@@ -1,52 +1,56 @@
 <html>
     <head><h1>Shortest Job First Algorithm</h1></head>
 
-    <body onload="showProcessNumber()">
+    <body>
 
         <script src="sjf.js"></script>
-        <p id="processNumber"></p>
-        <p></p>
-        <input type="text" id="arrival_time" placeholder="Enter Arrival Time"/>
-        <p></p>
-        <input type="text" id="burst_time" placeholder="Enter Burst Time"/>
-        <p></p>
-        <button onclick="getData()">Next</button>
 
-<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+      <style>
+          table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+          }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+          td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-</style>
-</head>
-<body>
+          table, h2{
+            visibility: hidden;
+          }
+
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+
+          button{
+            width: 70px;
+            height: 50px;
+            font-size: 16px;
+          }
+      </style>
     
-    <button onclick="showTable()">show</button>
-    <h2>HTML Table</h2>
+    <button onclick="showTable()" id="show">show</button>
+    <p></p>
+    <br>
+    <h2 id="h2">RESULT : </h2>
 
-<table id="Result">
-  <tr>
-    <th>Process_NO</th>
-    <!-- <th>Arrival_Time</th> -->
-    <th>Burst_Time</th>
-    <th>Completition_Time</th>
-    <th>TAT</th>
-    <th>Waiting_Time</th>
-    <th>Response_Time</th>
-  </tr>
+  <table id="Result">
+    <tr>
+      <th>Process_NO</th>
+      <th>Arrival_Time</th>
+      <th>Burst_Time</th>
+      <th>Completition_Time</th>
+      <th>TAT</th>
+      <th>Waiting_Time</th>
+      <th>Response_Time</th>
+    </tr>
   
-</table>
-    </body>
+  </table>
+  
+</body>
 
 </html>
