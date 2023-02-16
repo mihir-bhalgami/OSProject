@@ -8,3 +8,7 @@ function show() {
         x.style.display = "none";
     }
 }
+
+function openPage(url){
+    window.open(url);
+}
