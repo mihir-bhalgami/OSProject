@@ -7,6 +7,12 @@
     <body>
         <script src="index.js"></script>
 
+        
+        <p id="theory">What is an operating system?</p>
+        
+        
+        <p id="content">An operating system (OS) is the program that, after being initially loaded into the computer by a boot program, manages all of the other application programs in a computer. The application programs make use of the operating system by making requests for services through a defined application program interface (API). In addition, users can interact directly with the operating system through a user interface, such as a command-line interface (CLI) or a graphical UI (GUI).</p>
+        
         <div class="dropdown">
             <button onclick="show()">Select Algorithm</button>
 
@@ -23,20 +29,45 @@
         </div>
         </div>
 
+        <div class="box-container">
+
+            <div id="box1" onclick="openPage('sjf.html')">
+                <p>Shortest Job First Algorithm</p>
+                <p>Shortest job first is a scheduling algorithm in which the process with the smallest execution time is selected for execution next. Shortest job first can be either preemptive or non-preemptive. Owing to its simple nature, shortest job first is considered optimal. It also reduces the average waiting time for other processes awaiting execution.</p>
+            </div>
+
+            <div id="box2">
+                <p>Dining Philosophers Algorithm</p>
+            </div>
+            <p></p>
+            <div id="box3"><p>C Look Disk Scheduling Algorithm</p></div>
+            <div id="box4"><p>First In First Out Page Replacement Algorithm</p></div>
+        </div>
+
         <style>
             h1{
                 text-align: center;
-                text-decoration: underline;
-                color: blanchedalmond;
+                font-size: xxx-large;
+                text-decoration: underline solid white ;
+                color: rgb(192, 195, 10);
             }
-
+            
             body{
-                background-color: rgb(35, 35, 143);
+                background-color: rgb(42, 8, 90);
             }
 
             button{
+                position: relative;
+                top: 30px;
+                background-color: rgb(28, 15, 15);
+                color: rgb(36, 178, 36);
+                border-color: azure;
+
+                font-weight:700;
                 padding: 20px 20px;
-                font-size: 16px;
+                font-size: 18px;
+
+                border-radius: 20px 20px 20px 20px;
             }
 
             .dropdown{
@@ -50,7 +81,7 @@
                 position: absolute;
                 display: none;
                 min-width: 200px;
-                top: 100%;
+                top: 110%;
                 box-shadow: 0px 8px 16px 0px rgba(33, 29, 92, 0.2);
                 z-index: 1;
             }
@@ -59,17 +90,70 @@
                 display: block;
                 position: relative;
                 padding: 20px 20px;
-                width: 100%;
-                background-color: aquamarine;
-                color: black;
+                width: 90%;
+                background-color: rgb(0, 0, 0);
+                border-style:dotted;
+                border-radius: 10px 10px 10px 10px;
+                border-color: antiquewhite;
+                color: rgb(255, 255, 255);
                 text-decoration: none;
             }
 
-            /* button:hover .dropdown-content{display: block;} */
 
             a:hover{background-color: rgb(11, 110, 26);}
-        
+
+            #theory{
+                font-weight: bold;
+                font-size: xx-large;
+                color: rgb(218, 5, 5);
+            }
+
+            #content{
+                font-size: 25px;
+                color: aliceblue;
+            }
+            
+            .box-container{
+                position: relative;
+                top: 20px;
+                text-align: center;
+            }
+
+            .box-container div{
+                display: inline-block;
+                vertical-align: top;
+                position: relative;
+
+                height: 400px;
+                width: 400px;
+
+
+                margin: 70px;
+                padding: 20px 30px;
+
+                border-radius: 20px 20px 20px 20px;
+                font-size: 20px;
+                font-weight: 700;
+                box-shadow: 20px 20px 5px 2px;
+            }
+            
+            #box1{
+                background-color: rgb(25, 122, 182);
+            }
+            
+            #box2{
+                background-color: orange;
+            }
+
+            #box3{
+                background-color: rgb(148, 44, 44);
+            }
+
+            #box4{
+                background-color: rgb(36, 115, 36);
+            }
         </style>
+
     </body>
 
-</html>
+</html> 
