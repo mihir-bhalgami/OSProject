@@ -3,9 +3,71 @@
 
     <body>
 
-        <script src="sjf.js"></script>
+      <script src="sjf.js"></script>
 
-      <style>
+<p>
+  Shortest job first is a scheduling algorithm in which the process with the smallest execution time is selected for execution next. Shortest job first can be either preemptive or non-preemptive. Owing to its simple nature, shortest job first is considered optimal. It also reduces the average waiting time for other processes awaiting execution.</p>
+  
+  <p>=> Here is the simple example of Shortest Job First scheduling algorithm :
+    <br> Arrival Time = [5, 2, 3, 4];
+    <br>Burst Time = [3, 5, 9, 4];
+  </p>
+
+  <button onclick="showInput()" id="input_button">Enter Input</button>
+  
+  <button onclick="showTable()" id="show">show</button>
+
+  <div id="input_container" class="input_container">
+  <div id="input_menu" class="input_menu">
+    
+    <p id="processNumber">Process 1:</p>
+
+    <input type="text" placeholder="Enter Arrival Time" id="arrival_time">
+
+    <p></p>
+
+    <input type="text" placeholder="Enter Burst time" id="burst_time">
+
+    <p></p>
+
+    <button onclick="getInput()" id="next">Next</button>
+
+  </div>
+  </div>
+
+  
+
+  <p></p>
+
+  <br>
+  <h2 id="h2">RESULT : </h2>
+  
+  <table id="Result">
+    <tr>
+      <th>Process_NO</th>
+      <th>Arrival_Time</th>
+      <th>Burst_Time</th>
+      <th>Completition_Time</th>
+      <th>TAT</th>
+      <th>Waiting_Time</th>
+      <th>Response_Time</th>
+    </tr>
+  
+  </table>
+
+    <style>
+          body{
+            background-color: black;
+            opacity: 1;
+            background: 0.01;
+            color: rgb(17, 205, 95);
+          }
+
+          h1{
+            color: rgb(195, 22, 22);
+            text-decoration: underline;
+          }
+
           table {
           font-family: arial, sans-serif;
           border-collapse: collapse;
@@ -26,30 +88,93 @@
             background-color: #dddddd;
           }
 
+          
+          p{
+            font-size: 25px;
+            font-weight: 600;
+          }
+
           button{
+            font-size: 18px;
+            font-weight: 800;
+          }
+
+          #input_button{
+            width: 150px;
+            height: 60px;
+            border-radius: 10px;
+            border-color: rgb(52, 198, 76);
+          }
+
+          #show{   
+            position: relative;
             width: 70px;
             height: 50px;
-            font-size: 16px;
+            left: 20px;
+            display: none;
           }
-      </style>
-    
-    <button onclick="showTable()" id="show">show</button>
-    <p></p>
-    <br>
-    <h2 id="h2">RESULT : </h2>
 
-  <table id="Result">
-    <tr>
-      <th>Process_NO</th>
-      <th>Arrival_Time</th>
-      <th>Burst_Time</th>
-      <th>Completition_Time</th>
-      <th>TAT</th>
-      <th>Waiting_Time</th>
-      <th>Response_Time</th>
-    </tr>
-  
-  </table>
+          
+          .input_container{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            top: 50px;
+          }
+
+          .input_menu {
+            text-align: center;
+            align-content: center;
+            background-color: rgb(11, 45, 169);
+            width: 350px;
+            height: 320px;
+            padding: 10px;
+            border-radius: 20px;
+            border-style: inset;
+            /* box-shadow: 20px 20px 40px 2px blue; */
+            /* display: none; */
+          }
+
+          #processNumber{
+            color: red;
+            font-weight: bolder;
+            font-style:normal;
+            text-decoration-style: wavy;
+            text-decoration-line: underline;
+            text-decoration-color: rgb(0, 0, 0);
+          }
+          
+          #next{
+            position: relative;
+            width: 80px;
+            height: 50px;
+            top: 10px;
+            border-style: inset;
+            border-radius: 10px 10px 10px 10px;
+
+          }
+
+          input{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            border-style: inset;
+            border-radius: 8px 20px 8px 20px;
+            background-color: #969494;
+            color: black;
+            /* display: none; */
+          }
+
+          ::placeholder{
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+          }
+
+
+    </style>
+
   
 </body>
 
